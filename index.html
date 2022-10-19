@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resize-It !</title>
+    <link rel="stylesheet" href="<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css" />
+    <script src="src/javascript/app.js" defer></script>
+    <!-- The DEFER ATTRIBUTE makes sure that the Javascript Code is executed only after the full page is loaded. This prevents running into undefined & unneccessary errors. -->
+  </head>
+  <body>
+    <div class="resizer">
+      <h1>Resize-It !</h1>
+      <input type="file" class="resizer__file" />
+
+      <!-- DIMENSIONS FOR THE IMAGE TO BE RESIZED -->
+      <div class="dimensions">
+        <input
+          type="text"
+          class="resizer__input resizer__input--width"
+          value="0"
+        />
+        <!-- As we may need a default input value -->
+        x
+        <input
+          type="text"
+          class="resizer__input resizer__input--height"
+          value="0"
+        />
+        <!-- As we may need a default input value -->
+
+        <!-- CHECKBOX FOR THE "KEEP ASPECT RATIO" -->
+        <label>
+          <input type="checkbox" class="resizer__aspect" checked />Keep Aspect
+          Ratio
+        </label>
+      </div>
+      <canvas class="resizer__canvas" width="500" height="500"></canvas>
+      <!-- Here, the width and height for the different uploaded images will be different. This is just a default given value. -->
+    </div>
+  </body>
+</html>
