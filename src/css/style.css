@@ -1,0 +1,36 @@
+body {
+  background-color: aquamarine;
+}
+
+.resizer {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 15px;
+  padding: 125px 500px;
+  width: 500px;
+  height: 575px;
+  border: 2px solid rgb(54, 36, 36);
+  border-radius: 5px;
+}
+
+h1{
+  font-family: 'Kanit', sans-serif;
+  font-size: 75px;
+  margin: 25px 50px;
+}
+.resizer__file {
+  padding-bottom: 20px;
+}
+.dimensions {
+  padding: 15px 0;
+}
+
+.resizer__input {
+  width: 125px;
+  padding: 5px;
+}
+
+.resizer__canvas {
+  max-width: 100%;
+}
